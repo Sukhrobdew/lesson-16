@@ -1,0 +1,15 @@
+
+html {
+    scroll-behavior: smooth;
+    font-size: 32px;
+}
+
+:root {
+  --link-color: #8b8e99;
+  --inter-family: "Inter";
+  --poppins-family: "Poppins";
+  --text-color: #8b8e99;
+  --title-color: #1E1D1D;
+  --text-font-size: 0.5rem;
+  --title-font-size:2rem;
+}

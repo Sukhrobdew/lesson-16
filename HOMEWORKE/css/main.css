@@ -1,0 +1,426 @@
+@import "./header.css";
+@import "./common.css";
+@import "./footer.css";
+@import "./mode.css";
+@import "./root.css";
+
+/* section home--- */
+#home {
+  background: linear-gradient(155.28deg, #383638 2.06%, #0b0b0b 33.08%);
+}
+
+.top-box {
+  padding-top: 224px;
+  padding-bottom: 142px;
+  display: grid;
+  align-items: center;
+  gap: 184px;
+  grid-template-columns: auto auto;
+}
+
+.discover {
+  max-width: 457px;
+}
+
+.watches img {
+  max-width: 461px;
+  height: 563px;
+}
+
+.discover h1 {
+  width: 85%;
+  font-size: 2rem;
+  color: white;
+  font-family: var(--poppins-family);
+}
+.discover p {
+  color: var(--text-color);
+  font-size: var(--text-font-size);
+  padding-top: 17px;
+  font-family: var(--poppins-family);
+}
+.search-container {
+  position: relative;
+  margin-top: 47px;
+}
+
+.discover input {
+  width: 443px;
+  height: 60px;
+  padding-left: 56px;
+  background: #ffffff;
+  border-radius: 15px;
+  z-index: -1;
+}
+.search-container i {
+  position: absolute;
+  color: #3858d6;
+  font-size: 1rem;
+  top: 13px;
+  left: 12px;
+}
+.search-container button {
+  position: absolute;
+  width: 112px;
+  height: 45px;
+  left: 325px;
+  top: 8px;
+  background: #3858d6;
+  border: 1px solid #3858d6;
+  border-radius: 9px;
+}
+
+.search-container,
+button:hover {
+  cursor: pointer;
+}
+
+/* media ------ */
+
+@media (max-width: 900px) {
+  .top-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .discover {
+    text-align: center;
+  }
+  .discover h1{
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 23px;
+  }
+
+  .discover input {
+    /* width: 375px; */
+    width: 100%;
+  }
+  .search-container button {
+    /* left: 250px; */
+    position: static;
+    margin: 15px auto;
+  }
+  .watches img {
+    width: 375px;
+    
+  }
+}
+
+/* section brands--------- */
+
+.brands-watchs {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-top: 73px;
+}
+
+.apple {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  width: 354px;
+  height: 239px;
+  gap: 26px;
+  background: #f6f6f6;
+  border-radius: 22px;
+}
+
+.apple h1 {
+  font-family: var(--inter-family);
+  font-size: var(--title-font-size);
+  color: var(--title-color);
+  padding-bottom: 9px;
+}
+
+.apple p {
+  width: 60%;
+  font-size: var(--text-font-size);
+  color: var(--text-color);
+  font-family: var(--inter-family);
+}
+.apple img {
+  padding-left: 41px;
+}
+
+@media (max-width: 900px) {
+  .brands-watchs {
+    grid-template-columns: auto auto;
+  }
+}
+@media (max-width: 770px) {
+  .brands-watchs {
+    grid-template-columns: auto;
+  }
+
+  .brands-watchs {
+    justify-content: center;
+    row-gap: 20px;
+  }
+}
+
+/* section recent products---- */
+
+.link-product {
+  padding-top: 135px;
+  text-align: center;
+}
+.link-product a {
+  font-family: "Inter";
+  font-size: 16px;
+  color: #3858d6;
+}
+.link-product h2 {
+  font-size: var(--title-font-size);
+  color: var(--title-color);
+}
+
+/* smart-apples */
+
+.smart-apples {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-top: 61px;
+  row-gap: 64px;
+  column-gap: 49px;
+}
+
+.smart1 {
+  position: relative;
+  width: 334px;
+  text-align: center;
+}
+
+.smart1 img {
+  padding: 28px 42px;
+  background: #f6f6f6;
+  border-radius: 3px;
+}
+.smart1 h3 {
+  font-family: var(--poppins-family);
+  font-size: 24px;
+  text-align: center;
+  color: var(--title-color);
+  padding-top: 11px;
+}
+
+.star {
+  font-size: 22px;
+  text-align: center;
+  padding: 10px 0 1px;
+}
+.smart1 .minus {
+  font-family: var(--poppins-family);
+  font-size: 20px;
+  text-decoration: line-through;
+  color: #8b8e99;
+}
+
+.smart1 .plus {
+  font-size: 20px;
+}
+
+.shop-card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  top: 5px;
+  right: -15px;
+  opacity: 0;
+  transition: 0.4s;
+}
+.shop-card .foo {
+  padding: 8px;
+  font-size: 16px;
+  color: white;
+  border-radius: 50%;
+  background: #3858d6;
+}
+.shop-card .foo1 {
+  padding: 8px;
+  border-radius: 50%;
+  color: white;
+  font-size: 16px;
+  background: #ff6b6b;
+}
+
+.smart1:hover .shop-card {
+  opacity: 1;
+  right: 18px;
+}
+.learn-more {
+  text-align: center;
+  padding: 69px 0 135px;
+}
+.learn-more button {
+  width: 196px;
+  height: 46px;
+  background: #3858d6;
+  border: 0;
+  border-radius: 15px;
+  color: white;
+  font-size: 0.5rem;
+}
+.learn-more button:hover {
+  box-shadow: inset -5px 5px 5px 1px rgb(187, 196, 176);
+}
+
+@media (max-width: 900px) {
+  .smart-apples {
+    grid-template-columns: auto auto;
+  }
+  .link-product {
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .smart-apples {
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+  .link-product {
+    text-align: center;
+  }
+}
+
+/* section about ------- */
+.people {
+  text-align: center;
+}
+.people a {
+  font-family: var(--inter-family);
+  font-size: 0.5rem;
+  text-align: center;
+  color: #3858d6;
+}
+.people h2 {
+  color: var(--title-color);
+  font-size: var(--title-font-size);
+  padding-bottom: 54px;
+}
+/* --- */
+
+/* .splide--track {
+    display: flex;
+    justify-content: space-between;
+   
+} */
+
+.splide__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.splide__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 524px;
+  height: 239px;
+  background: #f6f6f6;
+  border-radius: 10px;
+}
+.faizi h3 {
+  font-family: var(--inter-family);
+  font-size: 24px;
+  color: #1e1d1d;
+}
+.faizi p {
+  width: 75%;
+  font-size: var(--text-font-size);
+  color: var(--text-color);
+  font-family: var(--inter-family);
+}
+.splide__slide .star {
+  text-align: left;
+}
+
+.splide__slide img {
+  padding: 35px 29px;
+}
+
+/* section */
+
+.subscribe {
+  margin-top: 150px;
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  grid-template-columns: auto auto;
+  background: #f6f6f6;
+  border-radius: 22px;
+}
+
+.news h1 {
+  font-weight: var(--inter-family);
+  font-size: var(--title-font-size);
+  color: var(--title-color);
+}
+.news p {
+  font-family: var(--inter-family);
+  font-size: var(--text-font-size);
+  color: var(--text-color);
+  padding: 15px 0;
+}
+
+.news input {
+  width: 443px;
+  height: 60px;
+  background: #ffffff;
+  border-radius: 15px;
+  padding-left: 30px;
+}
+.news {
+    position: relative;
+}
+
+.news button {
+  position: absolute;
+  width: 131px;
+  height: 45px;
+  right: 190px;
+  top: 129px;
+  border: 0;
+  background: #3858d6;
+  border-radius: 9px;
+  color: white;
+}
+
+.sot img {
+    padding: 33px 0 43px;
+}
+
+@media (max-width:900px) {
+    .subscribe {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto;
+       
+    }
+    .sot ,.news {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .news input {
+        width: 100%;
+    }
+    .news button {
+       position: static;
+       margin:15px auto;
+       
+    }
+    
+    
+}

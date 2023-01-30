@@ -1,0 +1,11 @@
+footer {
+    margin-top: 91px;
+    background: #0B0B0B;
+}
+footer p {
+    padding: 15px 0;
+    color: white;
+    text-align: center;
+    font-family: var(--poppins-family);
+    font-size: 0.6rem;
+}

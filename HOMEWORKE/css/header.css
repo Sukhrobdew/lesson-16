@@ -1,0 +1,162 @@
+header {
+  background: linear-gradient(155.28deg, #383638 2.06%, #0b0b0b 33.08%);
+}
+
+#navbar {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  background: linear-gradient(155.28deg, #383638 2.06%, #0b0b0b 33.08%);
+}
+
+/* shrink------ */
+nav {
+  padding: 30px 0;
+}
+
+.navbar-shrink {
+  padding: 12px 0;
+  transition: 0.3s;
+  box-shadow: 0 -8px 0 10px rgb(113, 108, 108);
+}
+
+/* ----- */
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links ul {
+  display: flex;
+
+  gap: 27px;
+}
+.links ul li {
+  display: flex;
+}
+
+.links a {
+  font-size: var(--text-font-size);
+  color: var(--text-color);
+}
+
+.links a:hover, .links a:focus {
+    color: #86d492;
+    text-decoration: underline;
+}
+
+.shop span {
+    display: none;
+    color: white;
+}
+.shop:hover{
+  cursor: pointer;
+}
+/* navbar responsive */
+
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 70px;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #c5c4c4;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #70e481;
+    text-decoration: underline;
+    padding: 15px;
+    
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+/* ------toggle--end---- */
+
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    background-color: transparent;
+    font-family: 'Inter';
+    margin: 0;
+  }
+  
+  
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 45px;
+    background-color: rgba(0,0,0, 0.9);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: var(--text-color);
+    padding: 12px 15px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+/* ------------------------media--------- */
+  @media (max-width: 700px) {
+    .links {
+        display: none;
+    }
+
+    .shop span {
+        display: inline-block;
+        font-size: 25px;
+    }
+  }
+
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }

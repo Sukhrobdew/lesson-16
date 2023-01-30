@@ -1,0 +1,28 @@
+
+@import url(../fonts/Inter-Regular.ttf);
+@import url(../fonts/Poppins-Regular.ttf);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.container {
+ max-width: 1140px;
+ margin: 0 auto;
+ padding: 0 20px;
+}
